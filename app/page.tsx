@@ -1,6 +1,8 @@
 import EcoTips from "./components/EcoTips";
+import EnvironmentSection from "./components/EnvironmentSection";
 import Hero from "./components/Hero";
-import NatureSection from "./components/NatureSection";
+
+import NatureStory from "./components/NatureStory";
 import Projects from "./components/Projects";
 import SaveTheWorldSection from "./components/SaveTheWorldSection";
 
@@ -8,7 +10,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <NatureSection />
+      <NatureStory />
+      <EnvironmentSection
+       />
       <EcoTips />
       <Projects />
       <SaveTheWorldSection  />
