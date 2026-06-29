@@ -26,13 +26,12 @@ export default function Hero() {
 
           <div className="flex flex-col items-center text-center">
             <p className="mb-6 text-lg text-white md:text-2xl">
-              Green is the prime color of the world
+             Crafting the future experience the world needs NEXT
             </p>
 
-            <h1 className="font-serif text-5xl leading-tight text-white md:text-8xl">
-              The beauty of
-              <br />
-              nature
+            <h1 className="font-serif leading-tight text-white text-2xl md:text-4xl">
+             Empowering business towards designing the most advantageous pathway to a sustainable net-zero circular future for all
+              
             </h1>
 
             <button className="mt-12 bg-lime-500 px-10 py-4 text-sm font-semibold uppercase tracking-[4px] text-white transition duration-300 hover:bg-lime-600">

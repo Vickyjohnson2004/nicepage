@@ -39,8 +39,8 @@ const tips = [
 
 export default function EcoTips() {
   return (
-    <section
-      className="relative py-20 px-5"
+   <section
+      className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-5"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=80')",
@@ -51,31 +51,31 @@ export default function EcoTips() {
       {/* White faded overlay */}
       <div className="absolute inset-0 bg-white/75 backdrop-blur-[1px]" />
 
-      <div className="relative z-10 mx-auto max-w-6xl">
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {tips.map((tip) => (
             <div
               key={tip.id}
-              className="bg-white/80 backdrop-blur-sm p-8 min-h-[380px] transition-all duration-300 hover:bg-white hover:-translate-y-2"
+              className="min-h-[320px] sm:min-h-[350px] lg:min-h-[380px] bg-white/80 backdrop-blur-sm p-6 sm:p-8 transition-all duration-300 hover:bg-white hover:-translate-y-2"
             >
               {/* Header */}
-              <div className="flex items-start gap-5 mb-10">
-                <span className="text-[92px] leading-none font-light text-[#3d6f83]">
+              <div className="mb-8 sm:mb-10 flex items-start gap-4 sm:gap-5">
+                <span className="text-[60px] sm:text-[76px] lg:text-[92px] leading-none font-light text-[#3d6f83]">
                   {tip.id}
                 </span>
 
-                <h3 className="font-serif text-[26px] leading-[1.05] font-normal text-black mt-4">
+                <h3 className="mt-2 sm:mt-4 font-serif text-xl sm:text-2xl lg:text-[26px] leading-tight lg:leading-[1.05] font-normal text-black">
                   {tip.title}
                 </h3>
               </div>
 
               {/* Body */}
-              <p className="text-[18px] leading-10 text-gray-800 mb-10">
+              <p className="mb-8 sm:mb-10 text-base sm:text-[17px] lg:text-[18px] leading-8 lg:leading-10 text-gray-800">
                 {tip.description}
               </p>
 
               {/* Link */}
-              <button className="uppercase tracking-wide text-lg font-bold border-b border-black hover:text-[#3d6f83] hover:border-[#3d6f83] transition">
+              <button className="border-b border-black text-base sm:text-lg font-bold uppercase tracking-wide transition hover:border-[#3d6f83] hover:text-[#3d6f83]">
                 More
               </button>
             </div>

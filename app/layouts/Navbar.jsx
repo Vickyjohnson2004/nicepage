@@ -29,7 +29,7 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 w-full h-20 bg-black text-white z-50">
         <div className="max-w-7xl mx-auto h-full px-6 lg:px-10 flex items-center justify-between">
           <Link href="/" className="text-4xl font-serif font-bold">
-            Ecology
+            FuturX
           </Link>
 
           <button
